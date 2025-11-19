@@ -1,0 +1,14 @@
+/home/seancrowe1/workspace/MonsterBattler/bin/Debug/net8.0/MonsterBattler
+/home/seancrowe1/workspace/MonsterBattler/bin/Debug/net8.0/MonsterBattler.deps.json
+/home/seancrowe1/workspace/MonsterBattler/bin/Debug/net8.0/MonsterBattler.runtimeconfig.json
+/home/seancrowe1/workspace/MonsterBattler/bin/Debug/net8.0/MonsterBattler.dll
+/home/seancrowe1/workspace/MonsterBattler/bin/Debug/net8.0/MonsterBattler.pdb
+/home/seancrowe1/workspace/MonsterBattler/obj/Debug/net8.0/MonsterBattler.GeneratedMSBuildEditorConfig.editorconfig
+/home/seancrowe1/workspace/MonsterBattler/obj/Debug/net8.0/MonsterBattler.AssemblyInfoInputs.cache
+/home/seancrowe1/workspace/MonsterBattler/obj/Debug/net8.0/MonsterBattler.AssemblyInfo.cs
+/home/seancrowe1/workspace/MonsterBattler/obj/Debug/net8.0/MonsterBattler.csproj.CoreCompileInputs.cache
+/home/seancrowe1/workspace/MonsterBattler/obj/Debug/net8.0/MonsterBattler.dll
+/home/seancrowe1/workspace/MonsterBattler/obj/Debug/net8.0/refint/MonsterBattler.dll
+/home/seancrowe1/workspace/MonsterBattler/obj/Debug/net8.0/MonsterBattler.pdb
+/home/seancrowe1/workspace/MonsterBattler/obj/Debug/net8.0/MonsterBattler.genruntimeconfig.cache
+/home/seancrowe1/workspace/MonsterBattler/obj/Debug/net8.0/ref/MonsterBattler.dll
