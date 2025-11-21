@@ -10,8 +10,8 @@ class Battles
         string[] elementNames = ["Normal", "Grass", "Fire", "Water", "Electric", "Bug", "Ground", "Poison", "Psychic", "Flying", "Ghost", "Dragon", "Ice", "Fighting", "Rock"];
         Element[] elements = SetElements(elementNames);
         Monster[] battlers = new Monster[2];
-        Monster monster1 = new Monster("Fred", elements[generator.Next(15)], elements[generator.Next(15)], generator.Next(20, 51), generator.Next(5, 21), generator.Next(5, 21), generator.Next(5, 16));
-        Monster monster2 = new Monster("George", elements[generator.Next(15)], elements[generator.Next(15)], generator.Next(20, 51), generator.Next(5, 21), generator.Next(5, 21), generator.Next(5, 16));
+        Monster monster1 = new Monster("Fred", elements[generator.Next(15)], elements[generator.Next(15)], generator.Next(20, 201), generator.Next(5, 76), generator.Next(5, 51), generator.Next(5, 61));
+        Monster monster2 = new Monster("George", elements[generator.Next(15)], elements[generator.Next(15)], generator.Next(20, 201), generator.Next(5, 76), generator.Next(5, 51), generator.Next(5, 61));
         battlers[0] = monster1; battlers[1] = monster2;
         int i = 0;
         Console.ForegroundColor = ConsoleColor.Yellow;
@@ -36,7 +36,7 @@ class Battles
             if (i == monster1.Speed * monster2.Speed)
             {
                 i = 0;
-            } 
+            }
             i++;
             if (monster1.Speed % i == 0 && monster2.Speed % i == 0)
             {
@@ -71,14 +71,14 @@ class Battles
                 Thread.Sleep(1000);
                 isBattling = Attack(second, first);
             }
-            else if (monster1.Speed % i == 0)
+            else if (monster2.Speed % i == 0)
             {
                 Console.ForegroundColor = ConsoleColor.Cyan;
                 Console.WriteLine($"It's {monster1.Name}'s turn - \n");
                 Thread.Sleep(1000);
                 isBattling = Attack(monster1, monster2);
             }
-            else if (monster2.Speed % i == 0)
+            else if (monster1.Speed % i == 0)
             {
                 Console.ForegroundColor = ConsoleColor.Magenta;
                 Console.WriteLine($"It's {monster2.Name}'s turn - \n");
@@ -141,9 +141,17 @@ class Battles
             }
         }
         target.Health -= damage;
-        Console.WriteLine($"{target.Name} loses {damage} points of health!");
-        Thread.Sleep(1000);
-        if (target.Health < 0)
+        if (damage == 1)
+        {
+            Console.WriteLine($"{target.Name} loses {damage} point of health!");
+            Thread.Sleep(1000);
+        }
+        else
+        {
+            Console.WriteLine($"{target.Name} loses {damage} points of health!");
+            Thread.Sleep(1000);
+        }
+        if (target.Health <= 0)
         {
             target.Health = 0;
             Console.WriteLine($"{target.Name} has died!\n");

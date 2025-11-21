@@ -12,3 +12,4 @@
 /home/seancrowe1/workspace/MonsterBattler/obj/Debug/net8.0/MonsterBattler.pdb
 /home/seancrowe1/workspace/MonsterBattler/obj/Debug/net8.0/MonsterBattler.genruntimeconfig.cache
 /home/seancrowe1/workspace/MonsterBattler/obj/Debug/net8.0/ref/MonsterBattler.dll
+/home/seancrowe1/workspace/MonsterBattler/obj/Debug/net8.0/MonsterBattler.sourcelink.json
